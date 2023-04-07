@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+    <h1>Create an Account</h1>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <p id="password-strength"></p>
+    <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+    <button type="button" onclick="register()">Register</button>
+  </form>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
